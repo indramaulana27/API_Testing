@@ -1,0 +1,12 @@
+actor: ApiTester
+modules:
+    enabled:
+    - \Helper\api
+    - REST: 
+        depends: PhpBrowser
+        url: https://api.advocacy.s360.is
+        part: json
+        environment_file: PostResourceCept.php
+        
+
+               

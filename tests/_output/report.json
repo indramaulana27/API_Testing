@@ -1,0 +1,215 @@
+{
+    "event": "suiteStart",
+    "suite": "api",
+    "tests": 9
+}{
+    "event": "testStart",
+    "suite": "api",
+    "test": "CreateNewAccountCept: Create new account via API"
+}{
+    "event": "test",
+    "suite": "api",
+    "test": "CreateNewAccountCept: Create new account via API",
+    "status": "pass",
+    "time": 2.8087911605835,
+    "trace": [],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "api",
+    "test": "CreateNewAccountPostCept: Create new account via API"
+}{
+    "event": "test",
+    "suite": "api",
+    "test": "CreateNewAccountPostCept: Create new account via API",
+    "status": "pass",
+    "time": 0.92156505584717,
+    "trace": [],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "api",
+    "test": "ChangePasswordUserCept: Change Password via API"
+}{
+    "event": "test",
+    "suite": "api",
+    "test": "ChangePasswordUserCept: Change Password via API",
+    "status": "pass",
+    "time": 1.0434129238129,
+    "trace": [],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "api",
+    "test": "CreateuserCept: Create new user via API"
+}{
+    "event": "test",
+    "suite": "api",
+    "test": "CreateuserCept: Create new user via API",
+    "status": "fail",
+    "time": 1.2317540645599,
+    "trace": [
+        {
+            "function": "dontSeeResponseCodeIs",
+            "class": "Codeception\\Module\\REST",
+            "type": "->",
+            "args": [
+                201
+            ]
+        },
+        {
+            "file": "D:\\testing\\vendor\\bin\\tests\\_support\\_generated\\ApiTesterActions.php",
+            "line": 1234,
+            "function": "runStep",
+            "class": "Codeception\\Scenario",
+            "type": "->",
+            "args": [
+                {
+                    "executed": true
+                }
+            ]
+        },
+        {
+            "file": "D:\\testing\\vendor\\bin\\tests\\api\\Manage\\create user and login\\CreateuserCept.php",
+            "line": 13,
+            "function": "dontSeeResponseCodeIs",
+            "class": "ApiTester",
+            "type": "->",
+            "args": [
+                201
+            ]
+        }
+    ],
+    "message": "Expected HTTP status code other than 201 (Created)\nFailed asserting that 201 is not equal to 201.\n",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "api",
+    "test": "ForgotPasswordCept: Forgot password via API"
+}{
+    "event": "test",
+    "suite": "api",
+    "test": "ForgotPasswordCept: Forgot password via API",
+    "status": "pass",
+    "time": 0.98181104660034,
+    "trace": [],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "api",
+    "test": "GetUserDashboardCept: Goes to dashboard via api"
+}{
+    "event": "test",
+    "suite": "api",
+    "test": "GetUserDashboardCept: Goes to dashboard via api",
+    "status": "pass",
+    "time": 0.93377304077148,
+    "trace": [],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "api",
+    "test": "LoginUserCept: Login via API"
+}{
+    "event": "test",
+    "suite": "api",
+    "test": "LoginUserCept: Login via API",
+    "status": "pass",
+    "time": 1.0456740856171,
+    "trace": [],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "api",
+    "test": "LookupPublicAdvocacyCept: Lookup advocacy via API"
+}{
+    "event": "test",
+    "suite": "api",
+    "test": "LookupPublicAdvocacyCept: Lookup advocacy via API",
+    "status": "fail",
+    "time": 0.95666289329529,
+    "trace": [
+        {
+            "function": "seeResponseCodeIs",
+            "class": "Codeception\\Module\\REST",
+            "type": "->",
+            "args": [
+                200
+            ]
+        },
+        {
+            "file": "D:\\testing\\vendor\\bin\\tests\\_support\\_generated\\ApiTesterActions.php",
+            "line": 1189,
+            "function": "runStep",
+            "class": "Codeception\\Scenario",
+            "type": "->",
+            "args": [
+                {
+                    "executed": true
+                }
+            ]
+        },
+        {
+            "file": "D:\\testing\\vendor\\bin\\tests\\api\\public\\LookupPublicAdvocacyCept.php",
+            "line": 15,
+            "function": "seeResponseCodeIs",
+            "class": "ApiTester",
+            "type": "->",
+            "args": [
+                200
+            ]
+        }
+    ],
+    "message": "Expected HTTP Status Code: 200 (OK). Actual Status Code: 422 (Unprocessable Entity)\nFailed asserting that 422 matches expected 200.\n",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "api",
+    "test": "OutreachAdvocacyCept: Perform actions and see result"
+}{
+    "event": "test",
+    "suite": "api",
+    "test": "OutreachAdvocacyCept: Perform actions and see result",
+    "status": "fail",
+    "time": 1.6621718406677,
+    "trace": [
+        {
+            "function": "seeResponseCodeIs",
+            "class": "Codeception\\Module\\REST",
+            "type": "->",
+            "args": [
+                200
+            ]
+        },
+        {
+            "file": "D:\\testing\\vendor\\bin\\tests\\_support\\_generated\\ApiTesterActions.php",
+            "line": 1189,
+            "function": "runStep",
+            "class": "Codeception\\Scenario",
+            "type": "->",
+            "args": [
+                {
+                    "executed": true
+                }
+            ]
+        },
+        {
+            "file": "D:\\testing\\vendor\\bin\\tests\\api\\public\\OutreachAdvocacyCept.php",
+            "line": 43,
+            "function": "seeResponseCodeIs",
+            "class": "ApiTester",
+            "type": "->",
+            "args": [
+                200
+            ]
+        }
+    ],
+    "message": "Expected HTTP Status Code: 200 (OK). Actual Status Code: 422 (Unprocessable Entity)\nFailed asserting that 422 matches expected 200.\n",
+    "output": ""
+}
